@@ -1,0 +1,146 @@
+/*CSS is ordered from top to bottom of page, grouped by parent + children ex. Flexbox 1 > Item 1 > Item 1 Child > Item 2 > Flexbox 2 > etc*/
+
+body {
+    padding-left:100px;
+    padding-right:100px;
+}
+
+/*begin header*/
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #000;
+    max-height: 60px;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    gap:8px;
+    list-style-type: none;
+    padding: 8px;
+}
+
+li {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/*begin flexbox 1*/
+.fb1{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #424242;
+}
+
+.fb1c{
+    display:flex;
+    flex-direction:column;
+    max-width: 500px;
+    background-color: #dbdbdb;
+    border-radius:8px;
+}
+
+.hero-text{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.sub-hero{
+    font-size: 18px;
+}
+
+.button1{
+    background-color: #5c5c5c;
+    color: #fff;
+    text-align:center;
+    text-decoration: none;
+    font-size:12px;
+    max-width: 150px;
+    min-height:40px;
+    border-radius:6px;
+}
+
+.fb1image{
+    width: 500px;
+    height: auto;
+}
+
+/*begin flexbox 2*/
+.fb2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    min-height:700px;
+}
+
+.fb2c{
+    display:flex;
+    flex-direction:row;
+    padding: 16px;
+    gap: 120px;
+}
+
+.item {
+    display:flex;
+    flex-direction:column;
+    max-width: 150px; 
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover{
+    transform: scale(1.1);
+}
+
+.item-text{
+    text-align: center;
+}
+
+/*begin flexbox 3*/
+.fb3{
+   display:flex;
+   justify-content: center;
+   align-content: center;
+   min-height:500px;
+}
+
+.quote1{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 700px;
+}
+
+/*begin flexbox 4*/
+.fb4{
+    display:flex;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.fb4c{
+    display:flex;
+    justify-content: space-between;
+}
+
+.fb4ctxt{
+    display:flex;
+    flex-direction: column;
+}
+
+.button2{
+    text-align:center;
+    text-decoration: none;
+    font-size:12px;
+    max-width: 150px;
+    max-height:40px;
+    border-radius:6px;
+}
