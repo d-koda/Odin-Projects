@@ -1,8 +1,21 @@
 /*CSS is ordered from top to bottom of page, grouped by parent + children ex. Flexbox 1 > Item 1 > Item 1 Child > Item 2 > Flexbox 2 > etc*/
 
-body {
-    padding-left:100px;
-    padding-right:100px;
+
+/*begin prerequisits for page*/
+
+@font-face {
+    font-family: headertext;
+    src: url(./requiredfiles/orbitron.medium.otf);
+}
+
+@font-face {
+    font-family: normaltext;
+    src: url(./requiredfiles/exo-2-0.light.otf);
+}
+
+@font-face {
+    font-family: subtext;
+    src: url(./requiredfiles/exo-2-0.extra-light.otf);
 }
 
 /*begin header*/
@@ -12,6 +25,7 @@ body {
     align-content: center;
     background-color: #000;
     max-height: 60px;
+    font-family: headertext;
 }
 
 ul{
@@ -34,7 +48,9 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #424242;
+    background: url("./Images/taipeisunrise.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .fb1c{
@@ -43,15 +59,18 @@ li {
     max-width: 500px;
     background-color: #dbdbdb;
     border-radius:8px;
+    flex:0;
 }
 
 .hero-text{
     font-size: 48px;
     font-weight: bolder;
+    font-family: headertext;
 }
 
 .sub-hero{
     font-size: 18px;
+    font-family: normaltext;
 }
 
 .button1{
@@ -73,74 +92,153 @@ li {
 /*begin flexbox 2*/
 .fb2 {
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
     min-height:700px;
+    background-color:#000;
+}
+
+.spacer{
+    max-width: 142px;
+    max-height: 12px;
+    background:none;
+}
+
+.fb2title{
+    color:#dbdbdb;
+    font-size: x-large;
+    font-family: headertext;
+    padding:30px;
 }
 
 .fb2c{
     display:flex;
     flex-direction:row;
-    padding: 16px;
-    gap: 120px;
+    justify-content: space-evenly;
 }
 
 .item {
     display:flex;
     flex-direction:column;
-    max-width: 150px; 
+    max-width: 152px;
+    border-radius:2px; 
+}
+
+.item-title{
+    font-family:headertext;
+    color:#dbdbdb;
+    font-size:large;
+    text-align: center;
+    padding:14px;
+    opacity: 100%;
 }
 
 .grow {
     transition: all .2s ease-in-out;
+    opacity: 0.8;
 }
 
 .grow:hover{
-    transform: scale(1.1);
+    transform: scale(1.15);
+    opacity: 1;
 }
 
 .item-text{
     text-align: center;
+    color:#fff;
+    font-family: subtext;
 }
 
 /*begin flexbox 3*/
 .fb3{
    display:flex;
+   flex-direction: column;
    justify-content: center;
    align-content: center;
    min-height:500px;
+   background-color: #dbdbdb;
+   gap:80px;
+}
+
+.fb3spacer{
+    max-width: 142px;
+    max-height: 12px;
+    background:none;
+    justify-self: center;
+    align-self: center;
+    padding:18px;
+}
+
+.fb3c{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    gap:48px;
+    margin-bottom: 24px;
 }
 
 .quote1{
-    display:flex;
-    justify-content: center;
+    max-width: 500px;
+    justify-self:center;
     align-self: center;
-    max-width: 700px;
+}
+
+.yumin{
+    max-height:400px;
+    width:auto;
+    align-self: center;
 }
 
 /*begin flexbox 4*/
 .fb4{
     display:flex;
     justify-content: center;
+    align-content:center;
     min-height: 500px;
+    background: url(./Images/neonfutureinvitationimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fb4c{
     display:flex;
     justify-content: space-between;
+    gap:14px;
+    background-color: rgba(219,219,219,0.92);
+    max-height:fit-content;
+    margin: 200px 150px;
+    border-radius: 8px;
+
 }
 
 .fb4ctxt{
     display:flex;
     flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    padding:8px;
+    font-family: normaltext;
 }
 
 .button2{
+    justify-self: center;
+    align-self: center;
     text-align:center;
     text-decoration: none;
+    font-family: subtext;
     font-size:12px;
+    font-weight: bold;
     max-width: 150px;
     max-height:40px;
     border-radius:6px;
+    margin:8px;
+}
+
+.fb5{
+    display:flex;
+    max-height: 60px;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
 }
