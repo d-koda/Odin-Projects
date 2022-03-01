@@ -2,35 +2,47 @@
 <html>
     <header>
         <meta charset="utf-8">
-        <title>Neon Future</title>
+        <title>NeonFuture </title>
         <link rel="stylesheet" href="./landing-page.css">
     </header>
 
     <body>
+
+        <!--Background video is here-->
+        <video autoplay muted loop id="roboticstop">
+            <source src="./Images/roboticsbackground2.mp4" type="video/mp4">
+        </video>
+
         <!--Header stuff that has to go at the top of the screen. List needs to have links on each li-->
         <div class="header">
             <div class="header-image"><img src="./Images/neonfutureheader.gif"></div>
             <ul>
                 <li>Hardware</li>
+                <li><img src="./Images/spacericon1.gif" class="spacericon"></li>
                 <li>Software</li>
+                <li><img src="./Images/spacericon1.gif" class="spacericon"></li>
                 <li>Personalize</li>
+                <li><img src="./Images/spacericon1.gif" class="spacericon"></li>
                 <li>About</li>
             </ul>
         </div>
 
         <!--Flexbox 1 comprised of a title with subtext, and an image with it-->
         <div class="fb1">
-            <div class="fb1c"><p class="hero-text">The Future of Biotechnology is covered in Neon.</p>
+            <div class="fb1c">
+                <p class="hero-text">The Future of Biotechnology is covered in Neon.</p>
                 <img src="./Images/possiblefinal2.gif" class="spacer">
                 <p class="sub-hero">Neon Future is the leading provider for all things cybernetic. From the latest power arms and the newest HUD software, to commercial grade spinal reinforcement and personalized eye implants, Neon Future has something for everyone.</p>
                 <button class="button1 grow">Schedule Now</button>
             </div>
+            <img src="./Images/mechanicalhand.jpg" class="fb1image">
         </div>
 
         <!--Flexbox 2 comprised of a title and 4 images w/ center aligned descriptors under them-->
         <div class="fb2">
             <img src="./Images/possiblefinal2.gif" class="spacer">
             <div class="fb2title">We build a brighter you.</div>
+            <img src="./Images/possiblefinal2.gif" class="spacer">
             <!--Opthologic augments-->
             <div class="fb2c">
                 <div class="item grow">
@@ -63,16 +75,20 @@
         <div class="fb3">
             <img src="./Images/possiblefinal2.gif" class="fb3spacer">
             <div class="fb3c">
-                <p class="quote1 sub-hero">I was scared at first, but after a friend suggested it, I scheduled a life changing appointment with Neon Future. Because of my new personal augments, my friends say I seem happier, I've been promoted, and when I walk down the street, everyone stops to stare. - Lin Yumin</p>
+                <div class="quote1">
+                    <p class="sub-hero">I was scared at first, but after a friend suggested it, I scheduled a life changing appointment with Neon Future. Because of my new personal augments, my friends say I seem happier, I've been promoted, and when I walk down the street, everyone stops to stare.</p>
+                    <p class="sub-hero-bold">- Lin Yumin</p>
+                </div>
                 <img src="./Images/yukik.jpg" class="yumin">
-            </div>    
+            </div>
+            <img src="./Images/possiblefinal2.gif" class="fb3spacer">    
         </div>
 
         <!--Final fb with actual content in it. Sign up button, call to action for marketing or w/e I want it to be I suppose-->
         <div class="fb4">
             <div class="fb4c">
                 <div class="fb4ctxt">
-                    <strong>Look forward to a better tomorrow.</strong>
+                    <b>Look forward to a better tomorrow.</b>
                     Together, we can make every day and every night a little brighter with Neon.
                 </div>
                 <button class="button2">Schedule Now</button>

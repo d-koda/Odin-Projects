@@ -18,6 +18,21 @@
     src: url(./requiredfiles/exo-2-0.extra-light.otf);
 }
 
+html, body{
+    margin:0;
+    height: 100%;
+}
+
+#roboticstop{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
 /*begin header*/
 .header{
     display:flex;
@@ -25,41 +40,62 @@
     align-content: center;
     background-color: #000;
     max-height: 60px;
+    width: 100%;
     font-family: headertext;
+    z-index: 1;
+    position: absolute;
+    top:0;
 }
 
 ul{
     display:flex;
-    flex-direction: row;
-    gap:8px;
+    gap:10px;
     list-style-type: none;
-    padding: 8px;
+    margin: 16px;
+    align-items: center;
 }
 
 li {
     font-size: 20px;
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.spacericon{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+#roboticstop{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
 }
 
 /*begin flexbox 1*/
 .fb1{
     display:flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    background: url("./Images/taipeisunrise.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    gap:60px;
+    margin-top: 5%;
 }
 
 .fb1c{
     display:flex;
     flex-direction:column;
-    max-width: 500px;
-    background-color: #dbdbdb;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    max-height: 500px;
+    background-color: rgba(219,219,219,0.8);
     border-radius:8px;
-    flex:0;
+    flex:1;
+    margin-top: 50px;
 }
 
 .hero-text{
@@ -82,11 +118,14 @@ li {
     max-width: 150px;
     min-height:40px;
     border-radius:6px;
+    margin: 8px;
 }
 
 .fb1image{
-    width: 500px;
-    height: auto;
+    width: auto;
+    max-height: 500px;
+    padding:50px;
+    opacity: .85;
 }
 
 /*begin flexbox 2*/
@@ -95,14 +134,14 @@ li {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    min-height:700px;
-    background-color:#000;
+    min-height:600px;
+    background-color:rgba(0,0,0,0.85);
 }
 
 .spacer{
-    max-width: 142px;
-    max-height: 12px;
-    background:none;
+    width: 142px;
+    height: 12px;
+    margin:1%;
 }
 
 .fb2title{
@@ -115,7 +154,7 @@ li {
 .fb2c{
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    gap:100px;
 }
 
 .item {
@@ -157,15 +196,14 @@ li {
    justify-content: center;
    align-content: center;
    min-height:500px;
-   background-color: #dbdbdb;
+   background-color: rgba(219,219,219,0.8);
    gap:80px;
 }
 
 .fb3spacer{
-    max-width: 142px;
-    max-height: 12px;
+    width: 142px;
+    height: 12px;
     background:none;
-    justify-self: center;
     align-self: center;
     padding:18px;
 }
@@ -174,14 +212,22 @@ li {
     display:flex;
     flex-direction: row;
     align-self: center;
-    gap:48px;
+    gap:60px;
     margin-bottom: 24px;
 }
 
 .quote1{
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
-    justify-self:center;
     align-self: center;
+}
+
+.sub-hero-bold{
+    font-size: 18px;
+    font-family: normaltext;
+    font-weight:bolder;
+    align-self: flex-end;
 }
 
 .yumin{
@@ -237,8 +283,8 @@ li {
 
 .fb5{
     display:flex;
-    max-height: 60px;
     background-color: #000;
     color: #fff;
     justify-content: center;
+    box-shadow: 0 50vh 0 50vh #000;
 }
