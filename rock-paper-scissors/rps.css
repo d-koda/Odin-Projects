@@ -1,0 +1,78 @@
+#score{
+    text-decoration: underline;
+}
+
+.scores{
+    background-color: pink;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.score-numbers{
+    display:flex;
+    flex-direction:row;
+    padding:8px;
+    gap: 16px;
+}
+
+.game{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.player{
+    text-decoration: underline;
+    background-color: red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-height: 200px;
+    max-width: 375px;
+    padding:8px;
+}
+
+.game-buttons{
+    display:flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.player-buttons{
+    border:none;
+    background:none;
+    padding: 0;
+}
+
+.cpu{
+    text-decoration: underline;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 200px;
+    max-width: 375px;
+    padding:8px;
+}
+
+.popup{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 35%;
+    margin-left: -180px;
+    border-radius: 4px;
+    background-color: blueviolet;
+    top:50%;
+    z-index: 2;
+    width: 45%;
+}
+
+
+.invis{
+    visibility: hidden;
+}
+
+
+
